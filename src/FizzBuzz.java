@@ -10,8 +10,6 @@ import java.util.List;
 // - If i is a multiple of 3 but not 5, print "Fizz"
 // - If i is a multiple of 5 but not 3, print "Buzz"
 
-import java.util.ArrayList;
-
 // *******************
 // About My Solution
 // *******************
