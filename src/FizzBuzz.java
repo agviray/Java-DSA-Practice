@@ -9,8 +9,18 @@
 
 public class FizzBuzz {
     public static void fizzBuzz(int n) {
+        // n is >= 1
         for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0 && i % 5 ==0) {
+            // First handle case resulting in "FizzBuzz".
+            // Do this because there may be situations where i might be a multiple of both
+            // 3 and 5.
+            // If this case was handled last, the wrong word will be printed.
+
+            // Example: If case i % 3 == 0 were to be handled first, and i = 15, the
+            // word "Fizz" would be printed out.
+            // - This would be incorrect because 15 is a multiple of both 3 and 5, so
+            //   the word "FizzBuzz" should be printed out instead.
+            if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println("FizzBuzz");
             }
             else if (i % 3 == 0) {
