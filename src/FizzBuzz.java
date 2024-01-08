@@ -10,9 +10,28 @@ import java.util.List;
 // - If i is a multiple of 3 but not 5, print "Fizz"
 // - If i is a multiple of 5 but not 3, print "Buzz"
 
-// *******************
-// About My Solution
-// *******************
+// *********************************
+// My interpretation / What I know
+// *********************************
+// A "multiple" of a number, is the number that you get when you multiply a
+// number by an integer (a whole number).
+// Multiples are usually integers, ie whole numbers (non-decimal numbers).
+// - Example 1: Multiples of 3 are 3,6,9,12,15,18,etc
+// - Example 2: Multiples of 5 are 5,10,15,20,25,etc
+
+// **************
+// My approach
+// **************
+// 1) Need to set up a for loop that iterates through a range from 1 to n, where n is included.
+// 2) Use the modulo operator % to see if the division between the number n and
+//    3 or 5, will result in 0 or a remainder.
+// - Example: If n % 3 == 0, we can infer that n is a multiple of 3. This remainder value of 0
+//   indicates that n is a multiple of 3.
+// 3) Set up if else statements to print or return the appropriate values.
+
+// ********************************
+// Other Details About My Solution
+// ********************************
 // I created two functions, fizzBuzzPrintSingleLineValues and fizzBuzzReturnValuesArray.
 // - The fizzBuzzPrintSingleLineValues function will print a single value on a single line.
 // - The fizzBuzzReturnValuesArray function will return an array of string values.
