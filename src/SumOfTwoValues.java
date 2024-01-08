@@ -8,6 +8,14 @@
 // *********************************
 // My interpretation / What I know
 // *********************************
+// 1) We're given two arguments to use in our function: an array of
+//    numbers, and another number.
+// 2) The goal is to return a boolean value true or false, if there
+//    are two numbers in the int[] argument, whose sum equals the int argument.
+
+// *********************************
+// My FIRST/INITIAL approach
+// *********************************
 // 1) Need to create a function that returns boolean value, true or false.
 // 2) Function will take 2 arguments: an int[] numsArray, and int targetSum
 // 3) Need to take two numbers in numsArray and calculate their sum.

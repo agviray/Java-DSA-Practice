@@ -19,9 +19,9 @@ import java.util.List;
 // - Example 1: Multiples of 3 are 3,6,9,12,15,18,etc
 // - Example 2: Multiples of 5 are 5,10,15,20,25,etc
 
-// **************
-// My approach
-// **************
+// ****************************
+// My FIRST/INITIAL approach
+// ****************************
 // 1) Need to set up a for loop that iterates through a range from 1 to n, where n is included.
 // 2) Use the modulo operator % to see if the division between the number n and
 //    3 or 5, will result in 0 or a remainder.

@@ -20,9 +20,9 @@ import java.util.*;
 // same forwards and backwards.
 // - Example: the word "mom" and number 454 are both palindromes.
 
-// **************
-// My approach
-// **************
+// ****************************
+// My FIRST/INITIAL approach
+// ****************************
 // 1) Need to create a function that returns boolean true or false.
 // 2) Function takes in an integer argument, int x
 // 3) Should convert x into array of values that have the same type, such as an
