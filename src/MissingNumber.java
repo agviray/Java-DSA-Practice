@@ -21,7 +21,7 @@ import java.util.*;
 // 1) We are given array of unique numbers, set to argument nums.
 //    - So argument is: int[] nums
 // 2) int[] nums contains numbers from 0 to n, where 0 and n are
-//    included in the array.
+//    included in the array, and n == nums.length.
 // 3) The numbers are NOT sorted at all.
 // 4) There is a single number missing from the range. Return this
 //    missing number.
@@ -53,7 +53,7 @@ public class MissingNumber {
             // I am relying on index as the comparing value to num in nums, because index will
             // always only increment by 1.
             if (num != index) {
-                // Numers in nums are sorted now, so if the num != index, then index is the missing number.
+                // Numbers in nums are sorted now, so if the num != index, then index is the missing number.
                 missingNum = index;
                 return missingNum;
             } else {
@@ -61,11 +61,22 @@ public class MissingNumber {
                 index++;
             }
         }
-
-
+        return missingNum;
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello Missing Number problem!");
+        int[] test_a = {0, 1};
+        int[] test_b = {3, 0, 1};
+        int[] test_c = {9, 6, 4, 2, 3, 5, 7, 0, 1};
+
+        System.out.println("test_a expected output: " + 2);
+        System.out.println("test_a actual output: " + findMissingNuber(test_a));
+        System.out.println("\n");
+        System.out.println("test_b expected output: " + 2);
+        System.out.println("test_b output: " + findMissingNuber(test_b));
+        System.out.println("\n");
+        System.out.println("test_c expected output: " + 8);
+        System.out.println("test_c actual output: " + findMissingNuber(test_c));
+
     }
 }
