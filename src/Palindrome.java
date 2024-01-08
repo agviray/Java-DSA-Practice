@@ -35,19 +35,33 @@ import java.util.*;
 
 public class Palindrome {
     public static boolean isValueAPalindrome(int x) {
-        // *******************
+        // Convert int x to string, then convert string to array of char
+        String xString = Integer.toString(x);
+        char[] arrayOfChars = xString.toCharArray();
 
-        // Write logic here
-
-        // *******************
-        return false;
+        // - Use nested loop to iterate through array of characters from start
+        // and end, while checking if the active characters being compared are ==
+        // or != to each other.
+        // - If any two char values are not equal, return false because this means
+        // int x is not a palindrome.
+        // - Otherwise return true.
+        for (int i = 0; i < arrayOfChars.length; i++) {
+            for (int j = arrayOfChars.length - 1; j >= 0; j--) {
+                if (arrayOfChars[i] != arrayOfChars[j]) {
+                    return false;
+                }
+                i++;
+            }
+        }
+        return true;
     }
     public static void main(String[] args) {
         int testValue_a = 121;
         int testValue_b = -121;
         int testValue_c = 35;
 
-
-        System.out.println("Hello Palindrome Problem");
+        System.out.println(isValueAPalindrome(testValue_a));
+        System.out.println(isValueAPalindrome(testValue_b));
+        System.out.println(isValueAPalindrome(testValue_c));
     }
 }
